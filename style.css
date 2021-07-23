@@ -1,0 +1,48 @@
+body {
+  background-color: #efffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+}
+
+.logo {
+  display: none;
+}
+
+button:hover {
+  cursor: pointer;
+  animation: translate 0.3s forwards;
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+@media print {
+  form,
+  a,
+  button,
+  .aksi,
+  br {
+    display: none;
+  }
+  .logo {
+    margin-top: 50px;
+    display: block;
+  }
+  body {
+    color: #767676;
+  }
+  tr:nth-child(even) {
+    color: salmon;
+  }
+}
